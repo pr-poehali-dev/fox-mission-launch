@@ -31,8 +31,8 @@ export default function Hero() {
         <div className="absolute inset-0">
           <GodRays
             colorBack="#00000000"
-            colors={["#FFFFFF6E", "#F3F3F3F0", "#8A8A8A", "#989898"]}
-            colorBloom="#FFFFFF"
+            colors={["#FF2A2A6E", "#CC0000F0", "#8A0000", "#3A0000"]}
+            colorBloom="#FF4444"
             offsetX={0.85}
             offsetY={-1}
             intensity={1}
@@ -55,12 +55,15 @@ export default function Hero() {
         </div>
 
         <div className="relative z-10 flex flex-col items-center gap-4 sm:gap-6 text-center">
+          <div className="text-xs sm:text-sm font-mono uppercase tracking-[0.2em] text-black/60 mix-blend-exclusion mb-2">
+            Боевое искусство · Спорт · Развитие
+          </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal leading-[90%] tracking-[-0.03em] text-black mix-blend-exclusion max-w-2xl">
-            Ускорьте ваш маркетинг
+            Кудо — спорт для настоящих
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl leading-[160%] text-black max-w-2xl px-4">
-            Дайте вашей команде свободу творить, а не настраивать. Создавайте, запускайте и масштабируйте цифровые продукты с уверенностью и скоростью.
+          <p className="text-base sm:text-lg md:text-xl leading-[160%] text-black max-w-2xl px-4 mix-blend-exclusion">
+            Полноконтактное боевое искусство без ограничений. Приходи на тренировку и открой в себе силу, характер и дух настоящего бойца.
           </p>
 
           <AnimatePresence initial={false}>
@@ -72,7 +75,7 @@ export default function Hero() {
                   }}
                   layout
                   layoutId="cta-card"
-                  className="absolute inset-0 bg-[#004FE5] items-center justify-center transform-gpu will-change-transform"
+                  className="absolute inset-0 bg-[#CC0000] items-center justify-center transform-gpu will-change-transform"
                 ></motion.div>
                 <motion.button
                   initial={{ opacity: 0, scale: 0.8 }}
@@ -81,9 +84,9 @@ export default function Hero() {
                   exit={{ opacity: 0, scale: 0.8 }}
                   layout={false}
                   onClick={handleExpand}
-                  className="h-15 px-6 sm:px-8 py-3 text-lg sm:text-xl font-regular text-[#E3E3E3] tracking-[-0.01em] relative"
+                  className="h-15 px-6 sm:px-8 py-3 text-lg sm:text-xl font-regular text-white tracking-[-0.01em] relative"
                 >
-                  Запросить демо
+                  Записаться на тренировку
                 </motion.button>
               </motion.div>
             )}
@@ -101,7 +104,7 @@ export default function Hero() {
                 borderRadius: "24px",
               }}
               layout
-              className="relative flex h-full w-full overflow-y-auto bg-[#004FE5] transform-gpu will-change-transform"
+              className="relative flex h-full w-full overflow-y-auto bg-[#CC0000] transform-gpu will-change-transform"
             >
               <motion.div
                 initial={{ opacity: 0, scale: 2 }}
@@ -116,7 +119,7 @@ export default function Hero() {
               >
                 <MeshGradient
                   speed={1}
-                  colors={["#2452F1", "#022474", "#163DB9", "#0B1D99"]}
+                  colors={["#CC0000", "#7A0000", "#A01010", "#3D0000"]}
                   distortion={0.8}
                   swirl={0.1}
                   grainMixer={0}
@@ -133,7 +136,7 @@ export default function Hero() {
               >
                 <div className="flex-1 flex flex-col justify-center space-y-3 w-full">
                   <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium text-white leading-none tracking-[-0.03em]">
-                    Связаться с нами
+                    Записаться на тренировку
                   </h2>
 
                   <div className="space-y-4 sm:space-y-6 pt-4">
@@ -150,7 +153,7 @@ export default function Hero() {
                       </div>
                       <div>
                         <p className="text-sm sm:text-base text-white leading-[150%]">
-                          Узнайте, как FlowPulse может трансформировать ваш бизнес с индивидуальными решениями и гибкими тарифами.
+                          Кудо подходит для всех — детей, взрослых и тех, кто никогда не занимался боевыми искусствами. Первая тренировка бесплатно.
                         </p>
                       </div>
                     </div>
@@ -172,7 +175,7 @@ export default function Hero() {
                       </div>
                       <div>
                         <p className="text-sm sm:text-base text-white leading-[150%]">
-                          Убедитесь лично, как платформа FlowPulse ускоряет разработку и приносит результаты.
+                          Развивай силу, скорость и уверенность в себе под руководством опытных тренеров федерации кудо.
                         </p>
                       </div>
                     </div>
@@ -180,17 +183,15 @@ export default function Hero() {
 
                   <div className="pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-white/20">
                     <p className="text-lg sm:text-xl lg:text-2xl text-white leading-[150%] mb-4">
-                      FlowPulse позволяет нашей команде работать быстрее и выпускать продукты с уверенностью.
+                      Кудо изменило моё отношение к спорту. Это не просто единоборство — это образ жизни.
                     </p>
                     <div className="flex items-center gap-3 sm:gap-4">
-                      <img
-                        src="https://cdn.poehali.dev/templates/fluid-cta-ru/anna-avatar.jpg"
-                        alt="Анна Смирнова"
-                        className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover"
-                      />
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/20 flex items-center justify-center text-white font-bold text-lg">
+                        А
+                      </div>
                       <div>
-                        <p className="text-base sm:text-lg lg:text-xl text-white">Анна Смирнова</p>
-                        <p className="text-sm sm:text-base text-white/70">Директор по маркетингу, TechVision</p>
+                        <p className="text-base sm:text-lg lg:text-xl text-white">Алексей Воронов</p>
+                        <p className="text-sm sm:text-base text-white/70">Чемпион России по кудо</p>
                       </div>
                     </div>
                   </div>
@@ -204,58 +205,61 @@ export default function Hero() {
                         htmlFor="name"
                         className="block text-[10px] font-mono font-normal text-white mb-2 tracking-[0.5px] uppercase"
                       >
-                        ПОЛНОЕ ИМЯ *
+                        ИМЯ И ФАМИЛИЯ *
                       </label>
                       <input
                         type="text"
                         id="name"
                         name="name"
-                        className="w-full px-4 py-2.5 rounded-lg bg-[#001F63] border-0 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all text-sm h-10"
+                        placeholder="Иван Иванов"
+                        className="w-full px-4 py-2.5 rounded-lg bg-[#7A0000] border-0 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all text-sm h-10"
                       />
                     </div>
 
-                    {/* Work Email Field */}
+                    {/* Phone Field */}
                     <div>
                       <label
-                        htmlFor="email"
+                        htmlFor="phone"
                         className="block text-[10px] font-mono font-normal text-white mb-2 tracking-[0.5px] uppercase"
                       >
-                        РАБОЧИЙ EMAIL *
+                        ТЕЛЕФОН *
                       </label>
                       <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        className="w-full px-4 py-2.5 rounded-lg bg-[#001F63] border-0 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all text-sm h-10"
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="+7 (___) ___-__-__"
+                        className="w-full px-4 py-2.5 rounded-lg bg-[#7A0000] border-0 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all text-sm h-10"
                       />
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-4">
                       <div className="flex-1">
                         <label
-                          htmlFor="website"
+                          htmlFor="city"
                           className="block text-[10px] font-mono font-normal text-white mb-2 tracking-[0.5px] uppercase"
                         >
-                          САЙТ КОМПАНИИ
+                          ГОРОД
                         </label>
                         <input
-                          type="url"
-                          id="website"
-                          name="website"
-                          className="w-full px-4 py-2.5 rounded-lg bg-[#001F63] border-0 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all text-sm h-10"
+                          type="text"
+                          id="city"
+                          name="city"
+                          placeholder="Москва"
+                          className="w-full px-4 py-2.5 rounded-lg bg-[#7A0000] border-0 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all text-sm h-10"
                         />
                       </div>
-                      <div className="sm:w-32 w-full">
+                      <div className="sm:w-36 w-full">
                         <label
-                          htmlFor="company-size"
+                          htmlFor="age"
                           className="block text-[10px] font-mono font-normal text-white mb-2 tracking-[0.5px] uppercase"
                         >
-                          РАЗМЕР
+                          ВОЗРАСТ
                         </label>
                         <select
-                          id="company-size"
-                          name="company-size"
-                          className="w-full px-4 py-2.5 rounded-lg bg-[#001F63] border-0 text-white focus:outline-none focus:ring-2 focus:ring-white/20 transition-all appearance-none cursor-pointer text-sm h-10"
+                          id="age"
+                          name="age"
+                          className="w-full px-4 py-2.5 rounded-lg bg-[#7A0000] border-0 text-white focus:outline-none focus:ring-2 focus:ring-white/20 transition-all appearance-none cursor-pointer text-sm h-10"
                           style={{
                             backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='white' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E")`,
                             backgroundRepeat: "no-repeat",
@@ -263,11 +267,10 @@ export default function Hero() {
                             backgroundSize: "1rem",
                           }}
                         >
-                          <option value="1-10">1-10</option>
-                          <option value="11-50">11-50</option>
-                          <option value="51-200">51-200</option>
-                          <option value="201-500">201-500</option>
-                          <option value="501+">501+</option>
+                          <option value="child">До 12 лет</option>
+                          <option value="teen">13–17 лет</option>
+                          <option value="adult">18–35 лет</option>
+                          <option value="senior">35+ лет</option>
                         </select>
                       </div>
                     </div>
@@ -278,22 +281,23 @@ export default function Hero() {
                         htmlFor="message"
                         className="block text-[10px] font-mono font-normal text-white mb-2 tracking-[0.5px] uppercase"
                       >
-                        КОММЕНТАРИЙ
+                        ВОПРОС ИЛИ ПОЖЕЛАНИЕ
                       </label>
                       <textarea
                         id="message"
                         name="message"
                         rows={3}
-                        className="w-full px-4 py-3 rounded-lg bg-[#001F63] border-0 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all resize-none text-sm"
+                        placeholder="Есть ли опыт в единоборствах? Что хотите узнать?"
+                        className="w-full px-4 py-3 rounded-lg bg-[#7A0000] border-0 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all resize-none text-sm"
                       />
                     </div>
 
                     {/* Submit Button */}
                     <button
                       type="submit"
-                      className="w-full px-8 py-2.5 rounded-full bg-white text-[#0041C1] font-medium hover:bg-white/90 transition-colors tracking-[-0.03em] h-10"
+                      className="w-full px-8 py-2.5 rounded-full bg-white text-[#CC0000] font-medium hover:bg-white/90 transition-colors tracking-[-0.03em] h-10"
                     >
-                      Отправить
+                      Записаться
                     </button>
                   </form>
                 </div>
